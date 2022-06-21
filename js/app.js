@@ -11,22 +11,65 @@
  */
 function initialize() {
   console.log("in initialize()");
-  handleRumble();
+  handleGuessingGame();
+  handleStatesLived();
+  handlePlaneJumping();
+  handleSpeaking();
   handleBooleans();
   handleColors();
 }
 
 /**
- * Prompts user for rumble status
+ * Prompts user for Guessing status
  */
-function handleRumble() {
-  let answer = confirm("Are you ready to rumble?");
+function handleGuessingGame() {
+  let answer = confirm("Are you ready to play a guessing game about me?");
   if (answer === true) {
-    console.log("LET'S GET READY TO RUMBLE!");
+    console.log("Awesome, let's do it!");
   } else {
-    console.log("Oh well then.");
+    console.log("Come on, it'll be fun");
   }
 }
+
+ 
+/**
+ * Prompts user for Jumping status
+ */
+ function handlePlaneJumping() {
+    let answer = confirm("Have I ever jumped out of a plane ?");
+    if (answer === true) {
+      console.log("HECK NO, ARE YOU KIDDING ME!");
+    } else {
+      console.log("CORRECT.");
+    }
+  }
+
+/**
+ * Prompts user for living status
+ */
+ function handleStatesLived() {
+    let answer = confirm("Do you think I've lived in any states besides IA & CA?");
+    if (answer === true) {
+      console.log("Yep, MO, Ok, & KS");
+    } else {
+      console.log("Better Luck next time.");
+    }
+  }
+
+/**
+ * Prompts user for speaking status
+ */
+ function handleSpeaking() {
+    let answer = confirm("Do you think I can speak another language?");
+    if (answer === true) {
+      console.log("Si, Habla espanol.");
+    } else {
+      console.log("Sorry, that is incorrect.");
+    }
+  }
+
+
+
 
 /**
  * Demonstrate using boolean values
