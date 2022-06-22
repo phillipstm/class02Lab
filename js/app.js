@@ -35,7 +35,7 @@ function handleGuessingGame() {
 /**
  * Prompts user for Jumping status
  */
- function handlePlaneJumping() {
+function handlePlaneJumping() {
     let answer = confirm("Have I ever jumped out of a plane ?");
     if (answer === true) {
       console.log("HECK NO, ARE YOU KIDDING ME!");
@@ -47,7 +47,7 @@ function handleGuessingGame() {
 /**
  * Prompts user for living status
  */
- function handleStatesLived() {
+function handleStatesLived() {
     let answer = confirm("Do you think I've lived in any states besides IA & CA?");
     if (answer === true) {
       console.log("Yep, MO, Ok, & KS");
@@ -59,7 +59,7 @@ function handleGuessingGame() {
 /**
  * Prompts user for speaking status
  */
- function handleSpeaking() {
+function handleSpeaking() {
     let answer = confirm("Do you think I can speak another language?");
     if (answer === true) {
       console.log("Si, Habla espanol.");
