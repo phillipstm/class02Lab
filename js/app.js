@@ -12,8 +12,8 @@
 function initialize() {
   console.log("in initialize()");
   handleGuessingGame();
-  handleStatesLived();
   handlePlaneJumping();
+  handleStatesLived();
   handleSpeaking();
   handleBooleans();
   handleColors();
