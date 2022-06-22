@@ -15,7 +15,6 @@ function initialize() {
   handlePlaneJumping();
   handleStatesLived();
   handleSpeaking();
-  handleBooleans();
   handleColors();
 }
 
@@ -74,7 +73,7 @@ function handleGuessingGame() {
 /**
  * Demonstrate using boolean values
  */
-function handleBooleans() {
+//function handleBooleans() {
   // Set up some variables
   let myBool = false;
   let anotherBool = false;
