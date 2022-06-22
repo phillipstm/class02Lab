@@ -98,17 +98,17 @@ function handleBooleans() {
  * Ask the user for their favorite color and respond.
  */
 function handleColors() {
-  let color = prompt("What is your favorite color?");
+  let color = prompt("What's my favorite color?");
   // Convert the color to lowercase and evaluate it
   switch (color.toLowerCase()) {
     case "red":
       console.log(`Your favorite color is red`);
       break;
     case "blue":
-      console.log(`Your favorite color is blue`);
+      console.log(`My favorite color is blue`);
       break;
     default:
-      console.log(`I don't know what your favorit color is`);
+      console.log(`You can't guess what my favorit color is?`);
   } // end of switch
   console.log(`finsihed with switch`);
 }
