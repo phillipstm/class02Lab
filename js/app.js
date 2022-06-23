@@ -140,6 +140,37 @@ while ( currantAttempts < maxAttempts && ! finished ) {
   
 }  //end loop
 
+/**
+ * let questionPlaces ="What are my favorite places?";
+let questiongoal = 1;  //arbitary correct answer
+let finished = false;  //success flag
+let maxAttempts = 6;  // max guess attempts
+let currantAttempts = 0; //initialize the loop variable
+ * 
+ *function favoritePlaces() {
+    console.log('Beaches, Waterfalls, Big Cities');
+    console.table(favoritePlaces);
+    console.log(`Looping through the array`);
+  for (let index = 0; index < favoritePlaces.length; index++) {
+    console.log(`Item: ${favoritePlaces[index]}`);
+while ( currantAttempts < maxAttempts && ! finished ) {
+  currantAttempts++;  //increment the loop condition variable
+  let answer = prompt (questionPlaces); //What is the data type returnedby prompt? How do you convert a string to a number?
+  let realAnswer = parseInt (answer);
+  let output = ""
+
+    
+ }
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
 
 
 
