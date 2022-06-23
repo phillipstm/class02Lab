@@ -112,3 +112,52 @@ function handleColors() {
   } // end of switch
   console.log(`finsihed with switch`);
 }
+
+/**
+ * Prompt for guess a number
+ */
+//Function handleGuessNumber(){
+let guessNumber ="What number am I thinking of?";
+let guessgoal = 3;  //arbitary correct answer
+let finished = false;  //success flag
+let maxAttempts = 4;  // max guess attempts
+let currantAttempts = 0; //initialize the loop variable
+while ( currantAttempts < maxAttempts && ! finished ) {
+  currantAttempts++;  //increment the loop condition variable
+  let answer = prompt (guessNumber); //What is the data type returnedby prompt? How do you convert a string to a number?
+  let realAnswer = parseInt (answer);
+  let output = ""
+
+  if (realAnswer > guessgoal) {
+    output = "Too high";
+  } else if (realAnswer < guessgoal)  {
+    output = "Too low";
+  } else {
+    output = "Awesome!";
+    finished = true;  //completion flag
+  }
+  alert(output);
+  
+}  //end loop
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
