@@ -17,6 +17,7 @@ function initialize() {
   handleSpeaking();
   handleBooleans();
   handleColors();
+  askFavoritePlaces();
 }
 
 /**
@@ -116,7 +117,8 @@ function handleColors() {
 /**
  * Prompt for guess a number
  */
-//Function handleGuessNumber(){
+
+function handleGuessNumber(){
 let guessNumber ="What number am I thinking of?";
 let guessgoal = 3;  //arbitary correct answer
 let finished = false;  //success flag
@@ -132,35 +134,52 @@ while ( currantAttempts < maxAttempts && ! finished ) {
     output = "Too high";
   } else if (realAnswer < guessgoal)  {
     output = "Too low";
-  } else {
+  } else if(realAnswer === guessgoal) {
     output = "Awesome!";
     finished = true;  //completion flag
   }
   alert(output);
-  
+}
 }  //end loop
 
-/**
- * let questionPlaces ="What are my favorite places?";
-let questiongoal = 1;  //arbitary correct answer
-let finished = false;  //success flag
-let maxAttempts = 6;  // max guess attempts
-let currantAttempts = 0; //initialize the loop variable
- * 
- *function favoritePlaces() {
-    console.log('Beaches, Waterfalls, Big Cities');
-    console.table(favoritePlaces);
-    console.log(`Looping through the array`);
-  for (let index = 0; index < favoritePlaces.length; index++) {
-    console.log(`Item: ${favoritePlaces[index]}`);
-while ( currantAttempts < maxAttempts && ! finished ) {
-  currantAttempts++;  //increment the loop condition variable
-  let answer = prompt (questionPlaces); //What is the data type returnedby prompt? How do you convert a string to a number?
-  let realAnswer = parseInt (answer);
-  let output = ""
 
-    
- }
+/**
+ * Game to guess favorite places. With multi-answer loop with 6 attempts.
+ * 
+ */
+function askFavoritePlaces() {
+
+  let questionPlaces ="What are my favorite places?";
+  let questionGoal = 1;  //arbitary correct answer
+  let finished = false;  //success flag
+  let maxAttempts = 6;  // max guess attempts
+  let placeList = ["beaches","waterfalls","big cities"];
+
+  
+
+    console.log('Beaches, Waterfalls, Big Cities');
+    console.log(`Looping through the array`);
+
+  let output = "Now you know my favorite places.";
+
+  let done = false;
+  for(let i = 0; i < maxAttempts && !done; i++){
+   let answer = prompt(questionPlaces);
+   answer = answer.toLowerCase();
+   let response = "nope try again"
+   let x = placeList.length;
+   for(let j = 0; j < x && !done; j++){
+     console.log(placeList[j]);
+     if(answer === placeList[j]){
+      response = "Awesome!";
+      console.log("finish");
+      done = true;
+     }
+ }  
+}
+}
+
+ /*
  * 
  * 
  * 
@@ -174,21 +193,16 @@ while ( currantAttempts < maxAttempts && ! finished ) {
 
 
 
- 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+  if(placeList(answer)){
+    response = "correct"
+    done = true;
+  }
+  alert(response);
+  //End of loop
+ }
+*/
 
